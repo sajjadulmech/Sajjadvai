@@ -1,0 +1,29 @@
+# ==============================================================================
+# ClearTapLab Production robots.txt
+# Domain: https://cleartaplab.com
+# Purpose: Clean search engine crawl budget optimization
+# ==============================================================================
+
+User-agent: *
+Disallow: /wp-admin/
+Allow: /wp-admin/admin-ajax.php
+Disallow: /wp-includes/
+Allow: /wp-includes/js/
+Allow: /wp-includes/css/
+Allow: /wp-includes/images/
+Disallow: /*?s=*
+Disallow: /*?*filter=*
+Disallow: /trackback/
+Disallow: /feed/
+Disallow: /comments/feed/
+
+# Allow full rendering of stylesheets and scripts
+Allow: /*.css$
+Allow: /*.js$
+Allow: /*.webp$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.svg$
+
+# Master XML Sitemap Reference
+Sitemap: https://cleartaplab.com/sitemap_index.xml

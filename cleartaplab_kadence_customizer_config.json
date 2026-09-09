@@ -1,0 +1,205 @@
+{
+  "theme": "kadence",
+  "version": "1.2.0",
+  "brand": "ClearTapLab",
+  "domain": "ClearTapLab.com",
+  "settings": {
+    "global_palette": {
+      "palette": [
+        {
+          "color": "#0084D1",
+          "name": "Color 1 (Primary Accent Aqua/Cyan)",
+          "slug": "theme-palette1",
+          "role": "Primary CTAs, Active Filter Pills, Brand Highlights"
+        },
+        {
+          "color": "#006EB3",
+          "name": "Color 2 (Accent Hover Dark Blue)",
+          "slug": "theme-palette2",
+          "role": "Button Hover, Active Links Hover"
+        },
+        {
+          "color": "#0D2040",
+          "name": "Color 3 (Primary Deep Navy)",
+          "slug": "theme-palette3",
+          "role": "Headings H1-H6, Dark Section Cards, Footer Background"
+        },
+        {
+          "color": "#0D2040",
+          "name": "Color 4 (Primary Reading Text)",
+          "slug": "theme-palette4",
+          "role": "Main Article Text, High-Contrast Body Copy"
+        },
+        {
+          "color": "#526E88",
+          "name": "Color 5 (Muted Blue-Slate Text)",
+          "slug": "theme-palette5",
+          "role": "Subtitles, Captions, Technical Spec Labels"
+        },
+        {
+          "color": "#E1EDF5",
+          "name": "Color 6 (Subtle Gray-Blue Border)",
+          "slug": "theme-palette6",
+          "role": "Card Borders, Table Dividers, Input Outlines"
+        },
+        {
+          "color": "#E0F2FE",
+          "name": "Color 7 (Aqua Light Tint)",
+          "slug": "theme-palette7",
+          "role": "Badge Backgrounds, Code Callout Backgrounds, Highlight Boxes"
+        },
+        {
+          "color": "#FFFFFF",
+          "name": "Color 8 (Surface Pure White)",
+          "slug": "theme-palette8",
+          "role": "Card Backgrounds, Content Boxes, Header Surface"
+        },
+        {
+          "color": "#F4FAFD",
+          "name": "Color 9 (Soft Ice-Blue Page Background)",
+          "slug": "theme-palette9",
+          "role": "Global Page Background (Airy Engineering Feel)"
+        }
+      ],
+      "additional_semantic_colors": {
+        "teal_nsf_certified": "#029E9D",
+        "teal_light_background": "#E0F7F6",
+        "warning_contaminant_alert": "#E65100",
+        "warning_light_background": "#FFF3E0",
+        "ocean_deep_container": "#08436B",
+        "ocean_card_surface": "#0A3654"
+      }
+    },
+    "typography": {
+      "base_font": {
+        "family": "Inter",
+        "google": true,
+        "variant": "regular",
+        "weight": "400",
+        "size": {
+          "desktop": "16",
+          "unit": "px"
+        },
+        "line_height": {
+          "desktop": "1.65",
+          "unit": ""
+        },
+        "letter_spacing": "-0.01em"
+      },
+      "headings_font": {
+        "family": "Plus Jakarta Sans",
+        "google": true,
+        "variant": "700",
+        "weight": "700",
+        "letter_spacing": "-0.025em"
+      },
+      "h1": {
+        "family": "Plus Jakarta Sans",
+        "weight": "800",
+        "size": {
+          "desktop": "44",
+          "tablet": "36",
+          "mobile": "28",
+          "unit": "px"
+        },
+        "line_height": "1.15",
+        "letter_spacing": "-0.035em",
+        "color": "palette3"
+      },
+      "h2": {
+        "family": "Plus Jakarta Sans",
+        "weight": "800",
+        "size": {
+          "desktop": "32",
+          "tablet": "26",
+          "mobile": "22",
+          "unit": "px"
+        },
+        "line_height": "1.25",
+        "letter_spacing": "-0.03em",
+        "color": "palette3"
+      },
+      "h3": {
+        "family": "Plus Jakarta Sans",
+        "weight": "700",
+        "size": {
+          "desktop": "24",
+          "tablet": "20",
+          "mobile": "18",
+          "unit": "px"
+        },
+        "line_height": "1.3",
+        "color": "palette3"
+      },
+      "h4": {
+        "family": "Plus Jakarta Sans",
+        "weight": "700",
+        "size": {
+          "desktop": "20",
+          "tablet": "18",
+          "mobile": "16",
+          "unit": "px"
+        },
+        "line_height": "1.35",
+        "color": "palette3"
+      }
+    },
+    "buttons": {
+      "primary": {
+        "color": "#FFFFFF",
+        "background": "#0284C7",
+        "hover_color": "#FFFFFF",
+        "hover_background": "#0369A1",
+        "border_radius": 8,
+        "padding": {
+          "top": "12px",
+          "right": "24px",
+          "bottom": "12px",
+          "left": "24px"
+        },
+        "typography": {
+          "family": "Plus Jakarta Sans",
+          "weight": "700",
+          "size": "16px"
+        }
+      },
+      "secondary": {
+        "color": "#FFFFFF",
+        "background": "#0B192C",
+        "hover_color": "#FFFFFF",
+        "hover_background": "#1E293B",
+        "border_radius": 8
+      }
+    },
+    "layout": {
+      "content_width": 1200,
+      "content_style": "unboxed",
+      "single_post_content_width": 780,
+      "sidebar_width": "28%",
+      "page_background": "#F8FAFC",
+      "content_background": "#FFFFFF",
+      "border_radius_card": "20px"
+    },
+    "header": {
+      "layout": "standard",
+      "background": "#FFFFFF",
+      "bottom_border": "1px solid #E2E8F0",
+      "site_title_color": "#0B192C",
+      "navigation_link_color": "#0B192C",
+      "navigation_link_hover_color": "#0284C7",
+      "cta_button": {
+        "text": "Find Your Solution",
+        "url": "/water-problems/",
+        "style": "primary"
+      }
+    },
+    "footer": {
+      "background": "#0B192C",
+      "text_color": "#94A3B8",
+      "link_color": "#CBD5E1",
+      "link_hover_color": "#E0F2FE",
+      "heading_color": "#FFFFFF",
+      "top_border": "1px solid #1E293B"
+    }
+  }
+}

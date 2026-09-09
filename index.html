@@ -1,0 +1,527 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClearTapLab | Independent Home Water Filtration & Softener Engineering Guide</title>
+  <meta name="description" content="ClearTapLab provides unbiased, laboratory-grade reverse osmosis testing, water softener sizing calculators, and contaminant removal guides. Zero sponsor bias.">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+
+  <!-- ========================================================================
+       1. STANDALONE MODULAR HEADER COMPONENT
+       ======================================================================== -->
+  <header class="ctl-header">
+    <div class="ctl-container">
+      <div class="ctl-header-inner">
+        <a href="#" class="ctl-brand-logo">
+          <span class="ctl-logo-icon">&#128167;</span>
+          <span>ClearTap<span class="brand-tagline">LAB</span></span>
+        </a>
+        
+        <nav class="ctl-nav" aria-label="Main Navigation">
+          <ul class="ctl-nav-links">
+            <li><a href="#hubs" class="ctl-nav-link active">Categories</a></li>
+            <li><a href="#diagnostic" class="ctl-nav-link">Symptom Triage</a></li>
+            <li><a href="#calculator" class="ctl-nav-link">Sizing Calculator</a></li>
+            <li><a href="#framework" class="ctl-nav-link">Framework</a></li>
+            <li><a href="#articles" class="ctl-nav-link">Research Library</a></li>
+            <li><a href="#about" class="ctl-nav-link">Standards</a></li>
+          </ul>
+        </nav>
+
+        <div class="ctl-header-actions">
+          <button id="search-btn" class="ctl-search-btn" aria-label="Open Search">
+            <span>&#128269;</span>
+            <span>Search guides...</span>
+          </button>
+          <button id="menu-btn" class="ctl-menu-toggle" aria-label="Toggle Mobile Menu">&#9776;</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================
+       PAGE CONTENT (Starts Below Navigation & Ends Above Footer)
+       ======================================================================== -->
+  <main class="site-main">
+
+    <!-- SECTION 1: HERO -->
+    <section class="ctl-hero">
+      <div class="ctl-container">
+        <div class="ctl-hero-content">
+          <div class="badge-pill">
+            <span class="bullet-dot"></span>
+            <span>Engineering-Grade Home Water Sanctuary</span>
+          </div>
+          <h1 class="ctl-hero-title">Understand Your Water.</h1>
+          <div class="hero-highlight">Choose the Right Solution.</div>
+          <p class="ctl-hero-desc">
+            Unbiased, laboratory-tested water treatment guides, reverse osmosis performance audits, and softener sizing calculators built by chemical engineers. 0% sales bias.
+          </p>
+          <div class="ctl-hero-actions">
+            <a href="#diagnostic" class="button-primary">
+              <span>&#129514;</span>
+              <span>Rapid Symptom Triage</span>
+            </a>
+            <a href="#calculator" class="button-outline">
+              <span>&#128226;</span>
+              <span>Size Your Softener</span>
+            </a>
+          </div>
+          <div class="ctl-hero-trust">
+            <div class="ctl-trust-metric">
+              <span class="val">42+</span>
+              <span class="label">Contaminants Profiled</span>
+            </div>
+            <div class="ctl-trust-metric">
+              <span class="val">NSF 53 / 58 / 401</span>
+              <span class="label">Standards Benchmarked</span>
+            </div>
+            <div class="ctl-trust-metric">
+              <span class="val">100%</span>
+              <span class="label">Independent Research</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: HUBS -->
+    <section class="ctl-hubs-section" id="hubs">
+      <div class="ctl-container">
+        <div class="ctl-section-header">
+          <div class="badge-pill">
+            <span class="bullet-dot"></span>
+            <span>Engineering Directory</span>
+          </div>
+          <h2 class="ctl-section-title">Explore Water Treatment Hubs</h2>
+          <p class="ctl-section-subtitle">
+            Deep-dive guides, system comparisons, and chemical analysis by specialized domain.
+          </p>
+        </div>
+
+        <div class="ctl-hubs-container">
+          <div class="ctl-hub-card card-service card-hub-ro">
+            <div class="ctl-hub-icon">&#129449;</div>
+            <h3 class="ctl-hub-title">Reverse Osmosis</h3>
+            <p class="ctl-hub-desc">Under-sink, tankless, remineralization, waste ratios, and membrane efficiency.</p>
+            <a href="#articles" class="ctl-hub-link" data-category="reverse-osmosis" onclick="data-category=reverse-osmosis">Explore RO Survey &rarr;</a>
+          </div>
+
+          <div class="ctl-hub-card card-service card-hub-testing">
+            <div class="ctl-hub-icon">&#129514;</div>
+            <h3 class="ctl-hub-title">Water Testing</h3>
+            <p class="ctl-hub-desc">Certified EPA lab kits, TDS probes, strips, and contaminant interpretation guides.</p>
+            <a href="#articles" class="ctl-hub-link" data-category="water-testing" onclick="data-category=water-testing">Read Testing Guide &rarr;</a>
+          </div>
+
+          <div class="ctl-hub-card card-service card-hub-problems">
+            <div class="ctl-hub-icon">&#9888;&#65039;</div>
+            <h3 class="ctl-hub-title">Water Problems</h3>
+            <p class="ctl-hub-desc">Hard water, iron staining, PFAS, lead, sulfur smells, and cloudy water triage.</p>
+            <a href="#articles" class="ctl-hub-link" data-category="water-problems" onclick="data-category=water-problems">Diagnose Issues &rarr;</a>
+          </div>
+
+          <div class="ctl-hub-card card-service card-hub-wholehouse">
+            <div class="ctl-hub-icon">&#127968;</div>
+            <h3 class="ctl-hub-title">Whole House</h3>
+            <p class="ctl-hub-desc">Softeners, cartridge filters, UV disinfection, and backwashing media systems.</p>
+            <a href="#articles" class="ctl-hub-link" data-category="system-guides" onclick="data-category=system-guides">Size Systems &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: SYMPTOM DIAGNOSTIC TRIAGE -->
+    <section class="ctl-triage-section" id="diagnostic">
+      <div class="ctl-container">
+        <div class="ctl-section-header">
+          <div class="badge-pill">
+            <span class="bullet-dot"></span>
+            <span>Interactive Engineering Diagnostic</span>
+          </div>
+          <h2 class="ctl-section-title">Water Symptom Triage Engine</h2>
+          <p class="ctl-section-subtitle">
+            Select your observed water symptom to diagnose chemical causes, NSF standards, and corrective filtration.
+          </p>
+        </div>
+
+        <div class="ctl-triage-card">
+          <div class="ctl-symptom-selector">
+            <button class="ctl-symptom-btn active" data-symptom="limescale">
+              <span>&#129514;</span>
+              <span>White Scale &amp; Spots</span>
+            </button>
+            <button class="ctl-symptom-btn" data-symptom="sulfur">
+              <span>&#129449;</span>
+              <span>Rotten Egg Odor</span>
+            </button>
+            <button class="ctl-symptom-btn" data-symptom="rust">
+              <span>&#129457;</span>
+              <span>Orange / Red Stains</span>
+            </button>
+            <button class="ctl-symptom-btn" data-symptom="chlorine">
+              <span>&#128688;</span>
+              <span>Bleach / Chlorine Taste</span>
+            </button>
+            <button class="ctl-symptom-btn" data-symptom="acidic">
+              <span>&#9888;&#65039;</span>
+              <span>Blue-Green Stains / Low pH</span>
+            </button>
+          </div>
+
+          <div id="triage-result-container">
+            <!-- Dynamically injected via app.js -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: WATER SOFTENER SIZING CALCULATOR -->
+    <section class="ctl-calc-section" id="calculator">
+      <div class="ctl-container">
+        <div class="ctl-section-header">
+          <div class="badge-pill">
+            <span class="bullet-dot"></span>
+            <span>Exact Engineering Formula</span>
+          </div>
+          <h2 class="ctl-section-title">Water Softener Sizing Calculator</h2>
+          <p class="ctl-section-subtitle">
+            Compute resin volume, regeneration cycles, and capacity based on hardness and iron compensation.
+          </p>
+        </div>
+
+        <div class="ctl-calc-grid">
+          <div class="ctl-calc-form">
+            <h3 class="ctl-calc-form-title">Household Parameters</h3>
+            
+            <div class="ctl-form-group">
+              <label class="ctl-form-label" for="calc-people">
+                <span>Number of People in Home</span>
+                <span class="hint">75 gallons / person / day</span>
+              </label>
+              <input type="number" id="calc-people" class="ctl-form-input" value="4" min="1" max="20">
+            </div>
+
+            <div class="ctl-form-group">
+              <label class="ctl-form-label" for="calc-hardness">
+                <span>Water Hardness (GPG or PPM)</span>
+                <span class="hint">GPG (1 GPG = 17.1 PPM)</span>
+              </label>
+              <input type="number" id="calc-hardness" class="ctl-form-input" value="15" min="1" max="100">
+            </div>
+
+            <div class="ctl-form-group">
+              <label class="ctl-form-label" for="calc-iron">
+                <span>Iron Level (PPM / mg/L)</span>
+                <span class="hint">1 PPM iron = +5 GPG hardness</span>
+              </label>
+              <input type="number" id="calc-iron" class="ctl-form-input" value="0.5" step="0.1" min="0" max="10">
+            </div>
+
+            <button class="button-primary button-sm" onclick="openArticleModal(16)">
+              Read Complete Softener Sizing Blueprint (Guide 16) &rarr;
+            </button>
+          </div>
+
+          <div class="ctl-calc-output-card">
+            <div>
+              <div class="ctl-calc-output-header">
+                <h3>Engineering Sizing Results</h3>
+              </div>
+
+              <div class="ctl-calc-metric-row">
+                <span class="metric-label">Daily Water Usage:</span>
+                <span class="metric-val" id="res-daily-gal">300 GPD</span>
+              </div>
+
+              <div class="ctl-calc-metric-row">
+                <span class="metric-label">Compensated Hardness:</span>
+                <span class="metric-val" id="res-comp-hard">17.5 GPG</span>
+              </div>
+
+              <div class="ctl-calc-metric-row">
+                <span class="metric-label">Daily Grains to Remove:</span>
+                <span class="metric-val" id="res-grain-req">5,250 Grains</span>
+              </div>
+
+              <div class="ctl-calc-metric-row">
+                <span class="metric-label">Daily Calculation:</span>
+                <span class="metric-val" id="res-daily-grains">5,250 Grains</span>
+              </div>
+
+              <div class="ctl-calc-highlight-box">
+                <div class="sub">Recommended Rated Capacity</div>
+                <div class="main-res" id="res-grains">32,000 Grains</div>
+                <div class="res-resin" id="res-cuft">1.00 Cu. Ft. Resin</div>
+                <div class="res-resin" id="res-target-cap">32,000 Grains</div>
+                <div class="res-resin" id="res-resin-vol">1.0 Cu Ft Resin Bed</div>
+              </div>
+
+              <div class="ctl-calc-metric-row">
+                <span class="metric-label">Regeneration Frequency:</span>
+                <span class="metric-val">Every 6-7 Days</span>
+              </div>
+
+              <div class="ctl-calc-metric-row">
+                <span class="metric-label">Est. Annual Salt Usage:</span>
+                <span class="metric-val" id="res-salt">385 lbs (~ 9.6 bags)</span>
+              </div>
+            </div>
+
+            <div class="ctl-calc-metric-row">
+              <span class="metric-label">Est. Annual Salt Cost:</span>
+              <span class="metric-cost" id="res-cost">$67 - $86 / year</span>
+              <span class="metric-cost" id="res-salt-cost">~$385 ($0.21/day)</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 5: 3-STEP FRAMEWORK -->
+    <section class="ctl-step-section" id="framework">
+      <div class="ctl-container">
+        <div class="ctl-section-header">
+          <div class="badge-pill">
+            <span class="bullet-dot"></span>
+            <span>Tested Protocol</span>
+          </div>
+          <h2 class="ctl-section-title">The 3-Step Purity Framework</h2>
+          <p class="ctl-section-subtitle">
+            An engineering-first approach to choosing, sizing, and maintaining water filtration.
+          </p>
+        </div>
+
+        <div class="ctl-step-container">
+          <div class="ctl-step-card card-step">
+            <div class="step-number">01</div>
+            <h3 class="ctl-step-title">Chemical Testing</h3>
+            <p class="ctl-step-desc">
+              Never buy a filter without precise chemical data. Test for GPG hardness, iron, TDS, MDCL, PFAS, and lead using certified standards.
+            </p>
+            <button class="button-outline button-sm" onclick="openArticleModal(1)">
+              Step 1 Guide (Guide 01) &rarr;
+            </button>
+          </div>
+
+          <div class="ctl-step-card card-step">
+            <div class="step-number">02</div>
+            <h3 class="ctl-step-title">System Sizing</h3>
+            <p class="ctl-step-desc">
+              Match flow rates (GPM), pressure drops, resin capacities, and NSF standards to your specific household demand.
+            </p>
+            <button class="button-outline button-sm" onclick="openArticleModal(2)">
+              Step 2 Guide (Guide 02) &rarr;
+            </button>
+          </div>
+
+          <div class="ctl-step-card card-step">
+            <div class="step-number">03</div>
+            <h3 class="ctl-step-title">Verification</h3>
+            <p class="ctl-step-desc">
+              Validate post-installation purity with long-term TDS sensors, cartridge micron checks, and subsequent annual profiles.
+            </p>
+            <button class="button-outline button-sm" onclick="openArticleModal(4)">
+              Step 3 Guide (Guide 04) &rarr;
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: RESEARCH LIBRARY & ARTICLES GRID -->
+    <section class="ctl-articles-section" id="articles">
+      <div class="ctl-container">
+        <div class="ctl-section-header">
+          <div class="badge-pill">
+            <span class="bullet-dot"></span>
+            <span>Peer-Reviewed Guides</span>
+          </div>
+          <h2 class="ctl-section-title">Independent Research Library</h2>
+          <p class="ctl-section-subtitle">
+            Deep dives into system performance, contaminant chemistry, and lifecycle costs.
+          </p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="ctl-filter-tabs" id="filter-tabs">
+          <button class="ctl-tab-btn active" data-category="all">All Articles (20)</button>
+          <button class="ctl-tab-btn" data-category="reverse-osmosis">Reverse Osmosis</button>
+          <button class="ctl-tab-btn" data-category="water-testing">Water Testing</button>
+          <button class="ctl-tab-btn" data-category="water-problems">Water Problems</button>
+          <button class="ctl-tab-btn" data-category="filtration-technology">Filtration Science</button>
+          <button class="ctl-tab-btn" data-category="system-guides">System Sizing</button>
+        </div>
+
+        <!-- Articles Grid -->
+        <div class="ctl-article-grid" id="articles-grid">
+          <!-- Dynamically Rendered via app.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: ABOUT -->
+    <section class="ctl-about-section" id="about">
+      <div class="ctl-container">
+        <div class="ctl-about-container">
+          <div class="ctl-about-left">
+            <div class="badge-dark">
+              <span class="bullet-dot"></span>
+              <span>Educational &amp; Engineering Only</span>
+            </div>
+            <h2 class="about-title">Independent Water Analysis.</h2>
+            <div class="about-highlight">Zero Sales Pressure.</div>
+            <p class="ctl-about-desc">
+              ClearTapLab was founded by water treatment engineers to deliver unfiltered, laboratory-tested guidance. We do not manufacture water equipment, accept manufacturer payments for reviews, or use sales-based marketing slogans.
+            </p>
+            <div class="ctl-author-box">
+              <div class="ctl-author-icon">&#129333;&#8205;&#128300;</div>
+              <div class="ctl-author-meta">
+                <h4>Marc Walton, P.E.</h4>
+                <p class="ctl-author-role">Lead Water Treatment Engineer</p>
+                <p class="ctl-author-desc">16+ years industrial and residential membrane filtration design &amp; chemical triage.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="ctl-about-right">
+            <h3 class="ctl-integrity-title">Our Editorial Integrity</h3>
+            <ul class="ctl-integrity-list">
+              <li><strong>NSF / ANSI Benchmarks:</strong> We only recommend systems with verifiable NSF/ WQA accreditations.</li>
+              <li><strong>Chemical Exactness:</strong> Every calculation and claim is backed by WQA books &amp; ASTM documents.</li>
+              <li><strong>Zero Retail Pressure:</strong> No hidden plumber commissions or salesman fees.</li>
+              <li><strong>Audited Testing:</strong> All lab data is publicly available for peer verification.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========================================================================
+       8. STANDALONE MODULAR FOOTER COMPONENT
+       ======================================================================== -->
+  <footer class="ctl-footer">
+    <div class="ctl-container">
+      <div class="ctl-footer-grid">
+        <div class="ctl-footer-col ctl-footer-col-brand">
+          <a href="#" class="ctl-brand-logo ctl-brand-logo-footer">
+            <span class="ctl-logo-icon">&#128167;</span>
+            <span>ClearTap<span class="brand-tagline">LAB</span></span>
+          </a>
+          <p class="ctl-footer-desc">
+            Independent home water treatment engineering research, materials science, and NSF benchmarking.
+          </p>
+          <p class="ctl-footer-audit">
+            <span class="bullet-dot"></span>
+            <span>Audited Standards: NSF/ ANSI 42, 53, 58, 62, 401, P473</span>
+          </p>
+        </div>
+
+        <div class="ctl-footer-col">
+          <h5>Systems</h5>
+          <ul class="ctl-footer-links">
+            <li><a href="#articles" data-category="reverse-osmosis" onclick="data-category=reverse-osmosis">Reverse Osmosis</a></li>
+            <li><a href="#articles" data-category="system-guides" onclick="data-category=system-guides">Water Softeners</a></li>
+            <li><a href="#articles" data-category="filtration-technology" onclick="data-category=filtration-technology">Whole House Filters</a></li>
+            <li><a href="#articles" data-category="water-testing" onclick="data-category=water-testing">Water Testing</a></li>
+            <li><a href="#articles" data-category="water-problems" onclick="data-category=water-problems">Water Problems</a></li>
+          </ul>
+        </div>
+
+        <div class="ctl-footer-col">
+          <h5>Treatment Tools</h5>
+          <ul class="ctl-footer-links">
+            <li><a href="#diagnostic">Symptom Triage</a></li>
+            <li><a href="#calculator">Sizing Calculator</a></li>
+            <li><a href="#hubs">TDS Interpreter</a></li>
+            <li><a href="#articles">PFAS Filter Funnel</a></li>
+          </ul>
+        </div>
+
+        <div class="ctl-footer-col">
+          <h5>Standards</h5>
+          <ul class="ctl-footer-links">
+            <li><a href="#about">Editorial Policy</a></li>
+            <li><a href="#about">NSF Protocols</a></li>
+            <li><a href="#about">Lab Methodology</a></li>
+            <li><a href="#about">About the Engineer</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="ctl-footer-bottom">
+        <p>&copy; 2026 ClearTapLab.com. All rights reserved.</p>
+        <p class="ctl-footer-disclaimer">For educational purposes only. Always test water prior to chemical installations.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ========================================================================
+       INTERACTIVE OVERLAYS, MODALS & DRAWERS (Pure Flexbox)
+       ======================================================================== -->
+
+  <!-- Article Reader Modal -->
+  <div id="article-modal" class="ctl-modal-backdrop" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="ctl-modal-container">
+      <div class="ctl-modal-header">
+        <div class="ctl-modal-header-brand">
+          <span class="bullet-dot"></span>
+          <strong>ClearTapLab</strong>
+          <span class="badge-pill">Technical Monograph</span>
+        </div>
+        <button id="modal-close-btn" class="ctl-modal-close-btn" aria-label="Close article reader">&#10005;</button>
+      </div>
+      <div id="modal-article-body" class="ctl-modal-body">
+        <!-- Dynamically filled via app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Live Instant Search Overlay -->
+  <div id="search-overlay" class="ctl-search-overlay" role="dialog" aria-modal="true" aria-hidden="true">
+    <div class="ctl-search-box">
+      <div class="ctl-search-header">
+        <h3 class="ctl-search-title">ClearTapLab Instant Search</h3>
+        <button id="search-close-btn" class="ctl-modal-close-btn" aria-label="Close Search">&#10005;</button>
+      </div>
+      <div class="ctl-search-input-wrap">
+        <input type="search" id="search-query-input" class="ctl-search-input" placeholder="Type a symptom, contaminant, or system type (e.g. PFAS, hardness, RO)..." autocomplete="off">
+      </div>
+      <div id="search-results-list" class="ctl-search-results-list">
+        <!-- Dynamically filled via app.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Mobile Navigation Drawer -->
+  <div id="mobile-drawer" class="ctl-mobile-drawer" role="dialog" aria-hidden="true">
+    <div class="ctl-drawer-header">
+      <a href="#" class="ctl-brand-logo">
+        <span class="ctl-logo-icon">&#128167;</span>
+        <span>ClearTap<span class="brand-tagline">LAB</span></span>
+      </a>
+      <button id="drawer-close-btn" class="ctl-modal-close-btn" aria-label="Close Drawer">&#10005;</button>
+    </div>
+    <ul class="ctl-drawer-links">
+      <li><a href="#hubs" class="drawer-link">Categories</a></li>
+      <li><a href="#diagnostic" class="drawer-link">Symptom Triage</a></li>
+      <li><a href="#calculator" class="drawer-link">Sizing Calculator</a></li>
+      <li><a href="#framework" class="drawer-link">Framework</a></li>
+      <li><a href="#articles" class="drawer-link">Research Library</a></li>
+      <li><a href="#about" class="drawer-link">Standards</a></li>
+    </ul>
+    <div class="ctl-drawer-footer">
+      <div class="badge-pill">Zero Sponsor Bias</div>
+    </div>
+  </div>
+
+  <!-- Application Engine Scripts -->
+  <script src="scripts/articles-data.js"></script>
+  <script src="scripts/app.js"></script>
+</body>
+</html>
